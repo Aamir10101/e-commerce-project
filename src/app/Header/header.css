@@ -1,0 +1,140 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #b67878;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+
+  .nav-link {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-link li {
+    margin-left: 30px;
+  }
+  
+  .nav-link a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+ 
+  .nav-link a:hover {
+    color: #f39c12;
+    transform: translateY(-3px);
+    background-color: #585757;
+    border-radius: 5px;
+  }
+  
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 180px
+  }
+  
+
+  .menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  
+
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .nav-link {
+    animation: slideIn 1s ease-out;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 15px 20px;
+    }
+  
+  
+    .nav-link {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-link.active {
+      display: flex;
+    }
+  
+
+    .nav-link li {
+      margin: 10px 0;
+    }
+  
+    .nav-link a {
+      padding: 12px;
+      font-size: 20px;
+    }
+  }
+

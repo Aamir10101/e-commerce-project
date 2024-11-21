@@ -1,0 +1,88 @@
+
+    * {
+        background-image: url('https://st2.depositphotos.com/3776273/10720/i/380/depositphotos_107206334-stock-photo-abstract-empty-dark-blackabstract-empty.jpg');
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      .container {
+        width: 90%;
+        max-width: 800px;
+        margin: 100px auto;
+      }
+      
+      .contact-page {
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 20px;
+        border-width: 10px;
+        padding: 40px;
+        background-color: rgba(0, 0, 0, 0.7); /* Dark background for text */
+        margin-top: 50px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      }
+      
+      .heading {
+        font-size: 36px;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 2px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 20px;
+        animation: fadeIn 1s ease-out;
+      }
+      
+      /* Contact info styling */
+      .contact-page p {
+        font-size: 18px;
+        color: white;
+        font-family: 'Arial', sans-serif;
+        margin: 15px 0;
+        line-height: 1.6;
+      }
+      
+      /* Heading fade-in animation */
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      /* Responsive design */
+      @media (max-width: 768px) {
+        .container {
+          width: 100%;
+          padding: 20px;
+        }
+      
+        .contact-page {
+          margin-top: 20px;
+          padding: 25px;
+        }
+      
+        .heading {
+          font-size: 28px;
+        }
+      
+        .contact-page p {
+          font-size: 16px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .heading {
+          font-size: 24px;
+        }
+      
+        .contact-page p {
+          font-size: 14px;
+        }
+      }
+      

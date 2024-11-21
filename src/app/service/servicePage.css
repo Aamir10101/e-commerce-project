@@ -1,0 +1,87 @@
+/* About Section */
+
+* {
+  background-image: url('https://st2.depositphotos.com/3776273/10720/i/380/depositphotos_107206334-stock-photo-abstract-empty-dark-blackabstract-empty.jpg');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: rgba(128, 128, 128, 0.7); /* Slight transparency for background */
+  border-radius: 20px;
+  padding: 30px;
+  width: 90%;
+  max-width: 900px;
+  margin: 100px auto; /* Centering container */
+}
+
+.service {
+  text-align: center;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 30px;
+  border-width: 10px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark background for text area */
+}
+
+.service h1 {
+  font-size: 36px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 2px;
+  animation: slideIn 1s ease-out;
+  margin-bottom: 20px;
+}
+
+.service p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin: 15px 0;
+}
+
+/* Heading animation */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .service {
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+  .service h1 {
+    font-size: 28px;
+  }
+
+  .service p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service h1 {
+    font-size: 24px;
+  }
+
+  .service p {
+    font-size: 14px;
+  }
+}
